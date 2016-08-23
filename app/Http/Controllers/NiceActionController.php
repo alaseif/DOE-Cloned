@@ -2,90 +2,76 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\DocFormRequest;
+use App\Http\Requests\ImageFormRequest;
 use \Illuminate\Http\Request;
 
 
 class NiceActionController extends Controller{
     
-    public function getNiceAction($action, $name=null){
-        return view('actions.'.$action,['name' => $name]);
+    public function getDocForm(){
+        return view('actions.DocumentForm');
         
     }
     
-  
-
-    public function postNiceAction(Request $request){
+    public function getImgForm(){
+        return view('actions.ImageForm');
+        
+    }
+    
+     public function postImgForm(ImageFormRequest $request){
         
         
+            $imageName = $request['User_ID']. '.' . date("F j.Y").'.'.
+            $request->file('Img_uploaded')->getClientOriginalExtension();
         
-        if($request['FileType']== "Photo" ){
-       
-            $this -> validate($request, [
-               
-                 'File_uploaded' => 'required|image|image_size:200,200',
-                 'Image_ID' => 'required|alpha'
-            ]);  
-        
-            $imageName = $request['Image_ID']. '.' . date("F j.Y").'.'.
-            $request->file('File_uploaded')->getClientOriginalExtension();
-        
-            if( $request->hasFile('File_uploaded'))
+            if( $request->hasFile('Img_uploaded'))
             { 
-                $img = $request->file('File_uploaded'); 
+                $img = $request->file('Img_uploaded'); 
                 if($img->isValid()){
         
-                $img->move(base_path() . '/public/image/',$imageName);
+                $img->move(base_path() . '/public/All_Sudents_Image/',$imageName);
                 }
      
             } else {
                 dd('No image was found');
             }
  
-            return view('actions.SuccessfulUpload',['first_gap' => $request['FileType'],'second_gap' => $imageName]);
-        
-        
-        }    
-        
-        else{
-        
-            $this -> validate($request, [
-                   
-                     'File_uploaded' => 'required|mimes:doc,docx,pdf',
-                     'Image_ID' => 'required|alpha'
-                ]);  
+            return view('actions.SuccessfulUpload',['first_gap' => "photo",'second_gap' => $imageName]);
+
+       
+    }
+  
+
+    
+    public function postDocForm(DocFormRequest $request){
+       
             
-                $imageName = $request['Image_ID']. '.' . date("F j.Y").'.'.
-                $request->file('File_uploaded')->getClientOriginalExtension();
+                $imageName = $request['User_ID']. '.' . date("F j.Y").'.'.
+                $request->file('Doc_uploaded')->getClientOriginalExtension();
             
-                if( $request->hasFile('File_uploaded'))
+                if( $request->hasFile('Doc_uploaded'))
                 { 
-                    $img = $request->file('File_uploaded'); 
+                    $img = $request->file('Doc_uploaded'); 
                     if($img->isValid()){
             
-                    $img->move(base_path() . '/public/docs/',$imageName);
+                    $img->move(base_path() . '/public/All_Students_docs/',$imageName);
                     }
          
                 } else {
                     dd('No doc was found');
                 }
      
-                return view('actions.SuccessfulUpload',['first_gap' => $request['action'],'second_gap' => $imageName]);
-            
-            
-                
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        }
+                return view('actions.SuccessfulUpload',['first_gap' => "Document",'second_gap' => $imageName]);
+         
+     
        
     }
     
-   
+ 
+
+
+
+
 }
 

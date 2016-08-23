@@ -8,7 +8,7 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="{{URL :: secure('main.css')}}">
+  <link rel="stylesheet" href="{{URL :: secure('Boot-CSS\css\bootstrap.css')}}">
     @yield('styles')
   </link>
 </head>

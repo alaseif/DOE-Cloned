@@ -16,20 +16,28 @@
         return view('home');
     })->name('home');
     
-    Route::get('/{action}/{name?}', [
-        'uses' => 'NiceActionController@getNiceAction',
-        'as' => 'niceaction'
+    Route::get('/ImgForm', [
+        'uses' => 'NiceActionController@getImgForm',
+        'as' => 'ImgForm'
+        ]);
+        
+    Route::get('/DocForm', [
+        'uses' => 'NiceActionController@getDocForm',
+        'as' => 'DocForm'
         ]);
         
         
    
-    Route::post('/upload', [
-            'uses'=> 'NiceActionController@postNiceAction',
-            'as' => 'upload']);
+    Route::post('/ImgUpload', [
+            'uses'=> 'NiceActionController@postImgForm',
+            'as' => 'ImgUpload']);
            
            
-           
-      
+    Route::post('/DocUpload', [
+            'uses'=> 'NiceActionController@postDocForm',
+            'as' => 'DocUpload']);
+                    
+          
 
         
 
