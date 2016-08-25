@@ -30,8 +30,16 @@
            <form action="{{ route('DocUpload')}}" method="post" files="true" enctype="multipart/form-data">
                <label for="select-action">I want to upload a Document</label>
               
-               <label for="User_ID">and my ID is ..</label>
-               <input type="text" name="User_ID"/>
+                <label for="User_ID">and my ID is ..</label>
+                <select id="User_ID" name="User_ID"/>
+               
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+               
+               </select>
             
                <input type="file" name="Doc_uploaded" id="Doc_uploaded">
                <button type="submit">Upload your Document</button>

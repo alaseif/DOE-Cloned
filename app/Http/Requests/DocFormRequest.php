@@ -25,7 +25,7 @@ class DocFormRequest extends Request
     {
         return [
                 'Doc_uploaded' => 'bail|required|mimes:doc,docx,pdf',
-                'User_ID' => 'required|alpha',
+                'User_ID' => 'required|numeric',
                 
                 
             

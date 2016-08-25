@@ -31,7 +31,15 @@
                <label for="select-action">I want to upload a photo </label>
               
                <label for="User_ID">and my ID is ..</label>
-               <input type="text" name="User_ID"/>
+               <select id="User_ID" name="User_ID"/>
+               
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+               
+               </select>
                <br><br>
                <input type="file" class ="centered" name="Img_uploaded" id="Img_uploaded">
                <button type="submit">Upload your file</button>

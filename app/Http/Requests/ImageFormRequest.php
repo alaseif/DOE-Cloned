@@ -25,7 +25,7 @@ class ImageFormRequest extends Request
     {
         return [
             
-                'User_ID' => 'bail|required|alpha',
+                'User_ID' => 'bail|required|numeric',
                 'Img_uploaded' => 'required|image|image_size:200,200'
                 
             
