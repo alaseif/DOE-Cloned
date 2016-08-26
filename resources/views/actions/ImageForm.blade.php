@@ -42,8 +42,9 @@
                </select>
                <br><br>
                <input type="file" name="Img_uploaded" id="Img_uploaded">
-               <button type="submit">Upload your file</button>
+               <button class="btn btn-default" type="submit">Upload your file</button>
                <input type="hidden" value="{{Session::token()}}" name="_token"/>
+               <br>
                <br>
                <p  class="help-block">*Photos must be 200px x 200p<br>
                *User ID is required</p>

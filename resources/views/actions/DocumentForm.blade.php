@@ -47,17 +47,16 @@
                 <div class="form-group">
                     
                    <input type="file" name="Doc_uploaded" id="Doc_uploaded">
-                   <button type="submit">Upload your Document</button>
+                   <button class="btn btn-default" type="submit">Upload your Document</button>
                    <input type="hidden" value="{{Session::token()}}" name="_token"/>
                    
                 </div>
-                   <br>
-                <div class="centered">   
+                   <br>       
                    <p  class="help-block">
                       *Documents must be in one of "doc","docx" or "pdf" format<br>
                   *User Id is required</p>
                   
-                </div>  
+          
 
                
            </form>
