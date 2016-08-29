@@ -1,0 +1,61 @@
+2016-08-28 23:26:07 / UberGallery v2.4.8 / PHP: 5.5.9-1ubuntu4.17 / GD: 2.1.1-dev / OS: Linux
+2016-08-28 23:26:07 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:26:07 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:26:07 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-28 23:26:07 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-28 23:27:10 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:27:10 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:27:10 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-28 23:27:10 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-28 23:28:25 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:28:25 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:28:25 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-28 23:28:25 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-28 23:29:09 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:29:09 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:29:09 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-28 23:29:09 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-28 23:40:13 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:40:13 : /home/ubuntu/workspace/resources/UberGallery.php on line 571 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:40:13 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-28 23:40:13 : /home/ubuntu/workspace/resources/UberGallery.php on line 239 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-28 23:47:31 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:47:31 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:47:31 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-28 23:47:31 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-28 23:48:53 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:48:53 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:49:44 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-28 23:49:44 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:00:21 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:00:21 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:00:36 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:00:36 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(/home/ubuntu/workspace/public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:07:21 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:07:21 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:10:12 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:10:12 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:10:56 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:10:56 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:12:20 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:12:20 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:13:07 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:13:07 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:13:07 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-29 00:13:07 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-29 00:13:43 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:13:43 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:13:43 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-29 00:13:43 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-29 00:14:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:14:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:14:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-29 00:14:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-29 00:14:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:14:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:14:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-29 00:14:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')
+2016-08-29 00:15:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:15:54 : /home/ubuntu/workspace/resources/UberGallery.php on line 573 [Warning] opendir(public/All_Students_Image): failed to open dir: No such file or directory
+2016-08-29 00:17:12 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(/home/ubuntu/workspace/resources/templates/defaultGallery.php): failed to open stream: No such file or directory
+2016-08-29 00:17:12 : /home/ubuntu/workspace/resources/UberGallery.php on line 241 [Warning] include(): Failed opening '/home/ubuntu/workspace/resources/templates/defaultGallery.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear')

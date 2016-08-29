@@ -30,7 +30,7 @@ class NiceActionController extends Controller{
                 $img = $request->file('Img_uploaded'); 
                 if($img->isValid()){
         
-                $img->move(base_path() . '/public/All_Sudents_Image/',$imageName);
+                $img->move(base_path() . '/public/AllStudentsImage/',$imageName);
                 }
      
             } else {
@@ -55,7 +55,7 @@ class NiceActionController extends Controller{
                     $img = $request->file('Doc_uploaded'); 
                     if($img->isValid()){
             
-                    $img->move(base_path() . '/public/All_Students_docs/',$imageName);
+                    $img->move(base_path() . '/public/AllStudentsDocs/',$imageName);
                     }
          
                 } else {
