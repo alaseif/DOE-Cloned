@@ -32,7 +32,7 @@ class NiceActionController extends Controller{
             array_push($ID_Has_Image,$t[0]);
      
             }  
-            var_dump($ID_Has_Image);
+        //    var_dump($ID_Has_Image);
         
         
             $imageName = $request['User_ID']. '.' . date("F-j-Y").'.'.
@@ -54,7 +54,7 @@ class NiceActionController extends Controller{
                 dd('No image was found');
             }
  
-            return view('actions.SuccessfulUpload',['first_gap' => "photo",'second_gap' => $imageName]);
+            return view('actions.SuccessfulImageUpload',['first_gap' => "photo",'second_gap' => $imageName]);
 
        
     }
@@ -62,24 +62,37 @@ class NiceActionController extends Controller{
 
     
     public function postDocForm(DocFormRequest $request){
-       
-            
-                $imageName = $request['User_ID']. '.' . date("F-j-Y").'.'.
-                $request->file('Doc_uploaded')->getClientOriginalExtension();
-            
-                if( $request->hasFile('Doc_uploaded'))
-                { 
-                    $img = $request->file('Doc_uploaded'); 
-                    if($img->isValid()  ){
-            
-                    $img->move(base_path() . '/public/AllStudentsDocs/',$imageName);
-                    }
-         
-                } else {
-                    dd('No doc was found');
-                }
+        
+            $files = glob('AllStudentsDocs/*.{doc,docx,pdf}', GLOB_BRACE);
+            $ID_Has_Doc=array();
+            foreach($files as $file){
+                $t=explode('.', basename($file));
+            array_push($ID_Has_Doc,$t[0]);
      
-                return view('actions.SuccessfulUpload',['first_gap' => "Document",'second_gap' => $imageName]);
+            }  
+            //var_dump($ID_Has_Doc);       
+            
+            $imageName = $request['User_ID']. '.' . date("F-j-Y").'.'.
+            $request->file('Doc_uploaded')->getClientOriginalExtension();
+            
+            if( $request->hasFile('Doc_uploaded')){
+                
+                $img = $request->file('Doc_uploaded'); 
+                if(!in_array($request['User_ID'],$ID_Has_Doc)){
+    
+                    $img->move(base_path() . '/public/AllStudentsDocs/',$imageName);
+                }
+                else {
+                
+                    $img->move(base_path() . '/public/AllDocumentsUploaded/',$imageName);
+                }
+         
+            } 
+            else {
+                dd('No doc was found');
+            }
+     
+                return view('actions.SuccessfulDocUpload',['first_gap' => "Document",'second_gap' => $imageName]);
          
      
        
