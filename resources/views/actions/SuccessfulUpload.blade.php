@@ -32,7 +32,7 @@
         $table = new HTML_Table(array("id" => "Image_Table"));
       
         $table->setAutoGrow(true);
-        $table->setAutoFill("<img src='/AllStudentsImage/avatar.png '  />");
+        $table->setAutoFill("<img src='/avatar.png '  />");
         
         $table->setHeaderContents(0, 0, 'ID');
         $table->setHeaderContents(0, 1, 'Image');

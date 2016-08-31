@@ -22,6 +22,17 @@ class NiceActionController extends Controller{
     }
     
      public function postImgForm(ImageFormRequest $request){
+         
+            $files = glob('AllStudentsImage/*.{jpg,png,gif}', GLOB_BRACE);
+            $ID_Has_Image=array();
+            foreach($files as $file){
+            
+            $t=explode('.', basename($file));
+            
+            array_push($ID_Has_Image,$t[0]);
+     
+            }  
+            var_dump($ID_Has_Image);
         
         
             $imageName = $request['User_ID']. '.' . date("F-j-Y").'.'.
@@ -30,9 +41,13 @@ class NiceActionController extends Controller{
             if( $request->hasFile('Img_uploaded'))
             { 
                 $img = $request->file('Img_uploaded'); 
-                if($img->isValid()){
-        
+                if(!in_array($request['User_ID'],$ID_Has_Image)){
+    
                 $img->move(base_path() . '/public/AllStudentsImage/',$imageName);
+                }
+                else {
+                
+                $img->move(base_path() . '/public/AllPicturesUploaded/',$imageName);
                 }
      
             } else {
