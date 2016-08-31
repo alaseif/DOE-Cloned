@@ -9,6 +9,8 @@ use \Illuminate\Http\Request;
 
 class NiceActionController extends Controller{
     
+    
+  
     public function getDocForm(){
         return view('actions.DocumentForm');
         
@@ -22,7 +24,7 @@ class NiceActionController extends Controller{
      public function postImgForm(ImageFormRequest $request){
         
         
-            $imageName = $request['User_ID']. '.' . date("F j.Y").'.'.
+            $imageName = $request['User_ID']. '.' . date("F-j-Y").'.'.
             $request->file('Img_uploaded')->getClientOriginalExtension();
         
             if( $request->hasFile('Img_uploaded'))
@@ -47,13 +49,13 @@ class NiceActionController extends Controller{
     public function postDocForm(DocFormRequest $request){
        
             
-                $imageName = $request['User_ID']. '.' . date("F j.Y").'.'.
+                $imageName = $request['User_ID']. '.' . date("F-j-Y").'.'.
                 $request->file('Doc_uploaded')->getClientOriginalExtension();
             
                 if( $request->hasFile('Doc_uploaded'))
                 { 
                     $img = $request->file('Doc_uploaded'); 
-                    if($img->isValid()){
+                    if($img->isValid()  ){
             
                     $img->move(base_path() . '/public/AllStudentsDocs/',$imageName);
                     }

@@ -6743,7 +6743,35 @@ button.close {
 .visible-print-inline {
   display: none !important;
 }
+
+#Image_Table {
+  
+  margin-left:auto; 
+  margin-right:auto;
+  
+  width: 600px;
+  border-collapse: collapse;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  border: 1px solid black;
+}
+
+#Image_Table th {
+  padding: 5px;
+  font-size: 1.2em;
+  text-align: center;
+  border-bottom: 1px solid black;
+  background-color: #F2C545;
+}
+
+#Image_Table td {
+  padding: 5px;
+}
 .centered{
+  
+    margin-left:auto; 
+    margin-right:auto; 
     text-align: center;
     vertical-align: middle;
 
