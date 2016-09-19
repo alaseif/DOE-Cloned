@@ -24,6 +24,8 @@ class InvalidImageTest extends TestCase
 
         # notice, strict:
         PHPUnit_Framework_Error_Notice::$enabled = FALSE;
+        
+        
 
         $value=1;
         //Uploading a 300*300 file
