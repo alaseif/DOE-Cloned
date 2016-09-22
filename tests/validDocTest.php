@@ -13,6 +13,14 @@ class validDocTest extends TestCase
      */
     public function testExample()
     {
-        $this->assertTrue(true);
+       //Uploading a doc file
+        $value=1;
+        $ImagePath="public/ValidDoc.docx";
+        $this->visit('/DocForm')
+             ->select($value, 'User_ID')
+             ->attach($ImagePath, 'Doc_uploaded')
+             ->press('Upload_Button')
+             ->seePageIs('/DocUpload');
+       
     }
 }

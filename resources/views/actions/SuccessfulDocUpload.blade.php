@@ -25,6 +25,8 @@
         require_once 'HTML/Table.php';
         error_reporting(error_reporting() & ~E_STRICT); //very important to avoid internal error
         
+         error_reporting(0);
+        
         
         $ID_List = array(1,2,3,4,5);
 

@@ -33,21 +33,14 @@
                 <div class="form-group">
                     <label for="select-action">I want to upload a Document</label>
                     <label for="User_ID">and my ID is ..</label>
-                    <select id="User_ID" name="User_ID"/>
-               
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                       
-                   </select>
+                    {!! Form::select('User_ID', array('1' => '1', '2' => '2' , '3' => '3', '4' => '4' ,'5' => '5')); !!}
+                    
                 </div>
                
                 <div class="form-group">
                     
                    <input type="file" name="Doc_uploaded" id="Doc_uploaded">
-                   <button class="btn btn-default" type="submit">Upload your Document</button>
+                   <button class="btn btn-default" type="submit" name="Upload_Button">Upload your Document</button>
                    <input type="hidden" value="{{Session::token()}}" name="_token"/>
                    
                 </div>

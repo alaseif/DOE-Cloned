@@ -27,14 +27,15 @@ class InvalidImageTest extends TestCase
         
         
 
+      
+        //Uploading a 300*225 file
         $value=1;
-        //Uploading a 300*300 file
-        $ImagePath="public/AllPicturesUploaded/1.September-2-2016.jpg";
+        $ImagePath="public/InvalidImage.jpg";
         $this->visit('/ImgForm')
              ->select($value, 'User_ID')
              ->attach($ImagePath, 'Img_uploaded')
              ->press('Upload_Button')
-             ->see('');
+             ->seePageIs('/ImgForm');
        
        // $this->assertRedirectedTo('/ImgForm');
     }
