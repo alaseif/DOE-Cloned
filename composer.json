@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "cviebrock/image-validator": "^2.1",
         "intervention/image": "^2.3",
-        "serverfireteam/panel": "^1.4"
+        "serverfireteam/panel": "^1.4",
+        "doctrine/dbal": "^2.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

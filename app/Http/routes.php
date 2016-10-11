@@ -16,6 +16,12 @@
         return view('home');
     })->name('home');
     
+    
+    Route::get('/WebTable', [
+        'uses' => 'NiceActionController@getWebTable',
+        'as' => 'WebTable'
+        ]);
+    
     Route::get('/ImgForm', [
         'uses' => 'NiceActionController@getImgForm',
         'as' => 'ImgForm'
@@ -37,8 +43,15 @@
             'uses'=> 'NiceActionController@postDocForm',
             'as' => 'DocUpload']);
                     
-          
-
+    Route::post('/WebUpdateForm', [
+            'uses'=> 'NiceActionController@postWebForm',
+            'as' => 'WebUpdateForm']);
+                         
+    
+     Route::post('/WebUpdated', [
+            'uses'=> 'NiceActionController@postWebUpdated',
+           'as' => 'WebUpdated']);
+                         
         
 
     

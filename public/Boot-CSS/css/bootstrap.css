@@ -6759,10 +6759,10 @@ button.close {
 
 #Image_Table th {
   padding: 5px;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
   border-bottom: 1px solid black;
-  background-color: #F2C545;
+  background-color: #77a5f4;
 }
 
 #Image_Table td {

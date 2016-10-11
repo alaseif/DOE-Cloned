@@ -5,11 +5,17 @@ namespace App\Http\Controllers;
 use App\Http\Requests\DocFormRequest;
 use App\Http\Requests\ImageFormRequest;
 use \Illuminate\Http\Request;
+use App\iac_website;
 
 
 class NiceActionController extends Controller{
     
-    
+    public function getWebTable(){
+        
+        $table = iac_website::all();
+        return view('actions.WebTable',['table' => $table,'updatedName' =>null] );
+        
+    }
   
     public function getDocForm(){
         return view('actions.DocumentForm');
@@ -21,7 +27,31 @@ class NiceActionController extends Controller{
         
     }
     
-     public function postImgForm(ImageFormRequest $request){
+    public function postWebForm(Request $request){
+        
+        
+        return view('actions.WebUpdateForm',['updatingWeb' => $request['selectedWeb']]);
+    }
+     public function postWebUpdated(Request $request){
+        
+        
+        $table = iac_website::all();
+        $updatedRow = $table->find(intval($request['updatedID']));
+        $updatedRow->R1=$request['R1'];
+        $updatedRow->R2=$request['R2'];
+        $updatedRow->R3=$request['R3'];
+        $updatedRow->R4=$request['R4'];
+        $updatedRow->R5=$request['R5'];
+        $updatedRow->R6=$request['R6'];
+        
+        $updatedRow->R7=$request['R7'];
+        $updatedRow->R8=$request['R8'];
+        
+        $updatedRow->save();
+        
+        return view('actions.WebTable',['table' => $table,'updatedName' => $request['updatedName']] );
+    }
+    public function postImgForm(ImageFormRequest $request){
          
             $files = glob('AllStudentsImage/*.{jpg,png,gif}', GLOB_BRACE);
             $ID_Has_Image=array();

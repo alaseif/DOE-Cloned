@@ -30,7 +30,8 @@
             <br><br><br><br>
             <a href="{{route('ImgForm')}}">link to upload Image</a>
              <br><br><br><br>
-          
+            <a href="{{route('WebTable')}}">link to IAC Website's validation</a>
+             <br><br><br><br>
 
                
            </form>

@@ -128,7 +128,7 @@ return [
          * Laravel Framework Service Providers...
          */
         
-  
+      
         Serverfireteam\Panel\PanelServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Cviebrock\ImageValidator\ImageValidatorServiceProvider::class,
@@ -161,6 +161,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\HelperServiceProvider::class
 
     ],
 
