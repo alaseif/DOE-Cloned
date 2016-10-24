@@ -21,6 +21,10 @@
         'uses' => 'NiceActionController@getWebTable',
         'as' => 'WebTable'
         ]);
+    Route::get('/Map', [
+        'uses' => 'NiceActionController@Map',
+        'as' => 'Map'
+        ]);
     
     Route::get('/ImgForm', [
         'uses' => 'NiceActionController@getImgForm',

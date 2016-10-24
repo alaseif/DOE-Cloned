@@ -16,6 +16,12 @@ class NiceActionController extends Controller{
         return view('actions.WebTable',['table' => $table,'updatedName' =>null] );
         
     }
+    public function Map(){
+        
+        
+        return view('actions.Map' );
+        
+    }
   
     public function getDocForm(){
         return view('actions.DocumentForm');
