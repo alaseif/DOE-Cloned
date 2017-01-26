@@ -12,16 +12,67 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 
 ## Official Documentation
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+#Project title: 2016 IAC website new modules
 
-## Contributing
+this project includes three components developed under LESS (Llaboratuar on Energy systems and sustainability) as below
+1) A form that allows for the uploading of 200px X 200px pictures.
+2) Dynamic validation form of AIC websites
+3) Unit test for above components
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+------------------------------------------
+Componet 1:
 
-## Security Vulnerabilities
+Controller :
+postImgForm(ImageFormRequest $request): Save the Image in specified directory with the requested format of namespace
+there are two directory for image, a function checks if it's the first picture uploaded by the user and decide which
+forlder to store the file in
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+postDocForm(DocFormRequest $request): same procedure as above function, this time for Documents
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+View:
+including 4 files, all the views use Bootstrap ass CSS :
+-ImageForm
+-DocForm
+-SuccessfulImageUploaded (use pear tech for building tables)
+-SuccessfulDocUploaded (use pear tech for building tables)
+
+Routes:
+4 request related to this component will be routed to correspinding controllers:
+-ImgForm
+-DocForm
+-ImgUpload
+-DocUpload
+
+------------------------------------------
+Component 2:
+
+Controller :
+ getWebTable() : retreive table from database (IAC_Website) and pass it to WebTable page
+ postWebForm(Request $request) : post the selected website to be modified in WebUpdateForm
+ postWebUpdated(Request $request) : Save the updated table for selected website and return to WebTable
+ 
+View:
+including 4 files, all the views use Bootstrap ass CSS :
+
+Routes:
+4 request related to this component will be routed to correspinding controllers:
+-WebUpdateForm
+-WebUpdated
+-WebTable
+
+Database:
+Includes one table IAC_Website with 8 boolean column each of which is the yes/no answer to corresponding criteria (R1 to R8)
+------------------------------------------
+Component 3:
+
+includes 4 files that checks for validity of inputs:
+
+InvalidDocTest
+
+validDocTest
+
+validImgTest
+
+validDocTest
+
